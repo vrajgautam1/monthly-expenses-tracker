@@ -1,0 +1,23 @@
+{
+  "month": "january",
+  "income": 20500,
+  "expenses": [
+    {
+      "category": "rent",
+      "amount": 7000,
+      "_id": "6874f5b42a21070db21bd7fd"
+    },
+    {
+      "category": "groceries",
+      "amount": 2500,
+      "_id": "6874f5b42a21070db21bd7fe"
+    },
+    {
+      "category": "uttarayan",
+      "amount": 2000,
+      "_id": "6874f5b42a21070db21bd7ff"
+    }
+  ],
+  "totalExpenses": 11500,
+  "remainingBalance": 9000
+}
