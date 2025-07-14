@@ -6,7 +6,7 @@
 
 ---
 
-### ✅ setMonthlyExpense
+### 1 - setMonthlyExpense
 - **Method:** `POST`
 - **URL:** `/setMonthlyExpense`
 - **Description:** Creates a new monthly expense entry in the database.
@@ -26,7 +26,7 @@
 
 ---
 
-### 📊 summary
+### 2 - summary
 - **Method:** `GET`
 - **URL:** `/summary`
 - **Description:** Returns total income, total expenses, and remaining balance.
@@ -38,22 +38,8 @@ GET /summary?month=january
 
 ---
 
-### 🗑 deleteCategory
-- **Method:** `DELETE`
-- **URL:** `/deleteCategory`
-- **Send JSON in Body:**
 
-```json
-{
-  "month": "january",
-  "category": "rent"
-}
-```
-- **Description:** Deletes a specific category from the given month.
-
----
-
-### ✏️ updateIncome
+### 3.1 updateIncome
 - **Method:** `PATCH`
 - **URL:** `/updateIncome`
 - **Send JSON in Body:**
@@ -68,7 +54,7 @@ GET /summary?month=january
 
 ---
 
-### ✏️ updateCategoriesAmount
+### 3.2 updateCategoriesAmount
 - **Method:** `PATCH`
 - **URL:** `/updateCategoriesAmount`
 - **Send JSON in Body:**
@@ -83,6 +69,22 @@ GET /summary?month=january
 - **Description:** Updates the `amount` of a specific category.
 
 ---
+
+###  deleteCategory
+- **Method:** `DELETE`
+- **URL:** `/deleteCategory`
+- **Send JSON in Body:**
+
+```json
+{
+  "month": "january",
+  "category": "rent"
+}
+```
+- **Description:** Deletes a specific category from the given month.
+
+---
+
 
 ### 📤 exportSummary
 - **Method:** `POST`
